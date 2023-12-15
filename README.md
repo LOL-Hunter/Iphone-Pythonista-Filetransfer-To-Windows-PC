@@ -10,5 +10,5 @@
 ## Installation
 * The Pythonista app have to be installed on Iphone.
 * Copy the Scrit into Pythonista.
-* URL for Windows executable: https://www.dropbox.com/scl/fi/3btj73xmyxc748hob7dk9/windows-file-tranfer-exe.zip?rlkey=p8gxner9cfyzyxih95ahim6qi&dl=0
+* URL for Windows executable: https://www.dropbox.com/scl/fi/4379kzmaj3n9lcsy0xl2g/fileTransferScript.zip?rlkey=rqg69o3m3ianzc8bwxl1kxz0v&dl=0
 * You can put the exe into Autostart. Its idleing with low RAM-usage, while waiting for incomming image file.
