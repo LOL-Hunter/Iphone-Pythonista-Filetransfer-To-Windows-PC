@@ -158,11 +158,13 @@ class FileTransferPlugin(tk.Tk):
 
 
         def save(e):
-            path = tk.FileDialog.saveFile(master, "Save as...", initialpath=os.path.join(os.path.join(os.path.expanduser('~')), 'Desktop'),types=[".png", ".jpg", ".jpeg"])
-            if path is None:
-                tk.SimpleDialog.askError("Invalid Path! [None]")
-            image.save(path)
             master.destroy()
+            path = tk.FileDialog.saveFile(master, "Save as...", initialpath=os.path.join(os.path.join(os.path.expanduser('~')), 'Desktop'),types=[".png"])
+            if path is None:
+                tk.SimpleDialog.askError(master, "Invalid Path! [None]\nSend Image again!")
+                return
+            path = path if path.endswith(".png") else path+".png"
+            image.save(path)
 
         master = tk.Toplevel(self)
         master.setTitle("PyImageSend v1.0")
@@ -196,4 +198,3 @@ class FileTransferPlugin(tk.Tk):
 
 
 FileTransferPlugin()
-
